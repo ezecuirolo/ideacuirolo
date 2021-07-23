@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-ReactDOM.render(<ul><li><a href="#">menu 1</a></li></ul>,
+ReactDOM.render(<h2>Hello World!</h2>,
   document.getElementById('root')
 )
