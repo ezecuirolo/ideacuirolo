@@ -3,8 +3,8 @@ import React from 'react';
 const NavBar = props => {
     //I have to loop all the items and convert them into LIs
     const items = props.items.map(item => (
-      <li class="nav-item">
-        <a class="nav-link" href={item.url}>
+      <li className="nav-item">
+        <a className="nav-link" href={item.url}>
           {item.label}
         </a>
       </li>
@@ -12,7 +12,7 @@ const NavBar = props => {
   
     //this methods says how the NavBar should look like in HTML
     return (
-      <nav class="navbar">
+      <nav className="navbar">
         <ul>{items}</ul>
       </nav>
     );
