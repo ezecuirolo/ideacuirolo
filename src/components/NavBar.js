@@ -1,4 +1,6 @@
 import React from 'react';
+import LogoQwines from './LogoQwines';
+import CartWidget from './CartWidget';
 
 const NavBar = props => {
     //I have to loop all the items and convert them into LIs
@@ -12,9 +14,12 @@ const NavBar = props => {
   
     //this methods says how the NavBar should look like in HTML
     return (
+      <>
       <nav className="navbar">
         <ul>{items}</ul>
       </nav>
+      <CartWidget/>
+      </>
     );
   
   };
@@ -27,7 +32,7 @@ const NavBar = props => {
     { label: "Delicatessen", url: "/delicatessen" }
   ];
   const Componente = () => {
-    return (<NavBar items={menu}/>);
+    return (<><LogoQwines/><NavBar items={menu}/></>);
   };
   
   export default Componente;

@@ -1,9 +1,28 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: thin solid #EEE;
+}
 header h2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight:700;
     font-size: 20px;
     line-height: 100%;
     text-align: center;
+}
+header .logo {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0 5px 0;
+}
+header .logo img{
+    max-width: 160px;
 }
 nav.navbar ul{
     display:-ms-flex;
@@ -12,6 +31,7 @@ nav.navbar ul{
     padding: 20px;
     -ms-justify-content:center;
     justify-content:center;
+    margin: 0 0 10px 0;
 }
 nav.navbar li{
     margin:0 10px;
@@ -31,4 +51,41 @@ nav.navbar li a{
 nav.navbar li a:hover{
     color: #333;
     background-color: transparent;
+}
+.cartIcon{
+    display:-ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    position: absolute;
+    right:40px;
+    top: 10px;
+    text-decoration: none;
+}
+.cartIcon i{
+    width: 24px;
+}
+.cartIcon span{
+    display:inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 3px 0 0;
+    font-weight:700
+}
+section.welcome{
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+section.welcome h4{
+    font-size:30px;
+    color: #000;
+    font-weight:700
 }
